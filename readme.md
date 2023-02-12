@@ -1,0 +1,1 @@
+# Bezzo: An Event Management Platform
