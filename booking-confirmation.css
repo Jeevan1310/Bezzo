@@ -1,102 +1,105 @@
-/* Global styles */
+/* Import Eventbrite font */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+/* Set body and header margin and padding */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    padding: 10px;
-  }
-  
-  nav ul li a:hover {
-    color: #C83349;
-  }
-  
-  /* Main styles */
-  main {
-    margin-top: 80px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #event-details, #booking-details, #confirmation-message {
-    margin-bottom: 30px;
-  }
-  
-  #event-details p, #booking-details p {
-    margin: 5px 0;
-    font-size: 16px;
-  }
-  
-  #confirmation-message p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* Style navigation menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #e05a4f;
+}
+
+/* Style main content */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#event-details {
+  border-bottom: 1px solid #ccc;
+}
+
+#event-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#booking-details {
+  border-bottom: 1px solid #ccc;
+}
+
+#booking-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#confirmation-message p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Style footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.875rem;
+  box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.1);
+}
