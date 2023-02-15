@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: #C83349;
+  }
+  
+  /* Main styles */
+  main {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #event-details, #booking-details, #confirmation-message {
+    margin-bottom: 30px;
+  }
+  
+  #event-details p, #booking-details p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  #confirmation-message p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+  
