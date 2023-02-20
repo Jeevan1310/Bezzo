@@ -1,67 +1,107 @@
+/* Main styles */
+
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #f7f7f7;
-	padding: 20px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav ul {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav li {
-	margin: 0 10px;
-}
-
-nav a {
-	color: #333;
-	text-decoration: none;
-}
-
-main {
-	padding: 40px;
-}
-
-#dashboard {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.card {
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	padding: 20px;
-	margin-bottom: 20px;
-	flex-basis: calc(33.3% - 20px);
-}
-
-.card h2 {
-	margin-top: 0;
-}
-
-button {
-	background-color: #f24c27;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #e03a1f;
-}
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #555;
+  }
+  
+  main {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #ff6c37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f04c22;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
