@@ -197,3 +197,110 @@ footer a {
 footer a:hover {
 	color: #428b
 }
+/* Form Styles */
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	color: #555555;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control:focus {
+	border-color: #428bca;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #ffffff;
+	background-color: #428bca;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	color: #ffffff;
+	background-color: #2a6496;
+	border: none;
+	outline: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 575px) {
+	.jumbotron h1 {
+		font-size: 3rem;
+	}
+	.jumbotron p {
+		font-size: 1.25rem;
+	}
+	.event h2 {
+		font-size: 2rem;
+	}
+	.thumbnail img {
+		height: 200px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+	}
+	.navbar-nav > li > a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.thumbnail {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: 750px;
+	}
+}
