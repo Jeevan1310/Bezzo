@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Event Name - Single Event Page</title>
-  <link rel="stylesheet" type="text/css" href="single-event.css">
+	<title>Event Information</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		.footer {
+			background-color: #f8f9fa;
+			padding: 10px;
+			text-align: center;
+		}
+		.sidebar {
+			margin-top: 10px;
+			background-color: #e9ecef;
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Upcoming Events</a></li>
-        <li><a href="#">Create Event</a></li>
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./signup.html">Sign Up</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="event-poster">
-      <img src="event-poster.jpg" alt="Event Poster">
-    </section>
-    <section id="event-details">
-      <h1>Event Name</h1>
-      <p>Date and Time</p>
-      <p>Location</p>
-      <p>Description of the event goes here...</p>
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-      </ul>
-      <button>Book Now</button>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2022 Event Management</p>
-  </footer>
+  <!-- Navigation bar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="./index.html">College Event Management</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Create Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./signup.html">Sign Up</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="./login.html">Log In</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+
+<!-- Sidebar -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="sidebar">
+				<h5>Event Information</h5>
+				<ul class="list-group">
+				  <li class="list-group-item">Venue</li>
+				  <li class="list-group-item">Gallery</li>
+				  <li class="list-group-item">Organizer</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<!-- Event Information Content -->
+			<h2>Event Name</h2>
+			<p>Description of the event goes here.</p>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+	<p>&copy; 2021 College Event Management</p>
+</div>
 </body>
 </html>
