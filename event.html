@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Event Information - College Event Management</title>
+	<title>College Event Management</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,51 +14,103 @@
 			padding: 10px;
 			text-align: center;
 		}
+		.sidebar {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #222;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.sidebar a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #f1f1f1;
+			display: block;
+		}
+		.sidebar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.main {
+			margin-left: 200px;
+			/* Same as the width of the sidebar */
+			font-size: 20px;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+		@media screen and (max-height: 450px) {
+		  .sidebar {padding-top: 15px;}
+		  .sidebar a {font-size: 18px;}
+		}
 	</style>
 </head>
 <body>
+  <!-- Navigation bar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="./index.html">College Event Management</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Create Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./signup.html">Sign Up</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="./login.html">Log In</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
 
-	<!-- Navigation bar -->
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-	  <a class="navbar-brand" href="./index.html">College Event Management</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="./index.html">Home</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Create Event</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./signup.html">Sign Up</a>
-	      </li>    
-	      <li class="nav-item">
-	        <a class="nav-link" href="./login.html">Log In</a>
-	      </li>
-	    </ul>
-	  </div>  
-	</nav>
+<!-- Sidebar -->
+<div class="sidebar">
+	<a href="#">Event Information</a>
+	<a href="#">Venue</a>
+	<a href="#">Gallery</a>
+	<a href="#">Organizer</a>
+</div>
 
-	<!-- Jumbotron -->
-	<div class="jumbotron text-center">
-	  <h1>Event Name</h1>
-	  <p>Event Date and Time</p>
-	</div>
-
-	<!-- Event Details -->
-	<div class="container">
-		<h2>Event Details</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
-
-	<!-- Footer -->
-	<div class="footer">
-		<p>&copy; 2021 College Event Management</p>
-	</div>
-
+<!-- Main content -->
+<div class="main">
+	<h2>Event Information</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h2>Venue</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+  <h2>Gallery</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="gallery-1.jpg" alt="Gallery 1" class="img-thumbnail">
+    </div>
+    <div class="col-md-4">
+      <img src="gallery-2.jpg" alt="Gallery 2" class="img-thumbnail">
+    </div>
+    <div class="col-md-4">
+      <img src="gallery-3.jpg" alt="Gallery 3" class="img-thumbnail">
+    </div>
+  </div>
+  
+  <h2>Organizer</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<!-- Footer -->
+<div class="footer">
+	<p>&copy; 2021 College Event Management</p>
+</div>
 </body>
 </html>
+
+
+
