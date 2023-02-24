@@ -13,35 +13,37 @@
 			background-color: #f8f9fa;
 			padding: 10px;
 			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
 		}
+
 		.sidebar {
 			height: 100%;
 			width: 200px;
 			position: fixed;
-			z-index: 1;
-			top: 0;
+			top: 56px;
 			left: 0;
-			background-color: #222;
+			background-color: #f5f5f5;
 			overflow-x: hidden;
 			padding-top: 20px;
 		}
+
 		.sidebar a {
-			padding: 6px 8px 6px 16px;
-			text-decoration: none;
-			font-size: 20px;
-			color: #f1f1f1;
 			display: block;
+			color: #000;
+			padding: 16px;
+			text-decoration: none;
 		}
+
 		.sidebar a:hover {
 			background-color: #ddd;
-			color: black;
+			color: #000;
 		}
+
 		.main {
 			margin-left: 200px;
-			/* Same as the width of the sidebar */
-			font-size: 20px;
-			/* Increased text to enable scrolling */
-			padding: 0px 10px;
+			padding: 20px;
 		}
 		@media screen and (max-height: 450px) {
 		  .sidebar {padding-top: 15px;}
@@ -75,7 +77,8 @@
 </nav>
 
 <!-- Sidebar -->
-<div class="sidebar">
+<div class="container-fluid">
+<div class="col-md-2 sidebar">
 	<a href="#">Event Information</a>
 	<a href="#">Venue</a>
 	<a href="#">Gallery</a>
@@ -83,27 +86,28 @@
 </div>
 
 <!-- Main content -->
-<div class="main">
+<div class="col-md-10 main">
 	<h2>Event Information</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>about event</p>
   <h2>Venue</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>about venue</p>
   
   <h2>Gallery</h2>
   <div class="row">
     <div class="col-md-4">
-      <img src="gallery-1.jpg" alt="Gallery 1" class="img-thumbnail">
+      <img src="Event-1.png" alt="Gallery 1" class="img-thumbnail">
     </div>
     <div class="col-md-4">
-      <img src="gallery-2.jpg" alt="Gallery 2" class="img-thumbnail">
+      <img src="Event-1.png" alt="Gallery 2" class="img-thumbnail">
     </div>
     <div class="col-md-4">
-      <img src="gallery-3.jpg" alt="Gallery 3" class="img-thumbnail">
+      <img src="Event-1.png" alt="Gallery 3" class="img-thumbnail">
     </div>
   </div>
   
   <h2>Organizer</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>organisation details</p>
+</div>
 </div>
 <!-- Footer -->
 <div class="footer">
